@@ -1,0 +1,213 @@
+//Fondo y texto
+$body-bg: #f1f3f4;
+$body-color: #282850;
+//Paleta de colores personalizada
+$principal: #282850;
+$exito: #009263;
+$peligro: #ff4e00;
+$secundario: #73a1b4;
+$terciario: #e59432;
+$oscuro: #4d4c4c;
+$color-buttons: #e3e7ea;
+$background-color: #f1f3f4;
+// Colores de bootstrap
+$primary: $principal;
+$secondary: $secundario;
+$success: $exito;
+$info: $terciario;
+$warning: $peligro;
+$danger: $background-color;
+$light: $color-buttons;
+$dark: $oscuro;
+// Personalizando botones
+$btn-padding-y: 0.2rem;
+$btn-padding-x: 2.2rem;
+$btn-border-radius: 0.4rem;
+//Personalizando TABS
+$nav-link-color: #282850;
+$nav-tabs-link-active-bg: #fff;
+$nav-tabs-link-bg: #4d4c4c;
+$nav-tabs-link-active-color: #282850;
+$nav-link-hover-color: #73a1b4;
+$nav-link-padding-x: 3rem;
+$nav-tabs-border-color: #f1f3f4;
+// Personalizando tabs
+$form-select-bg: #7bb1c7;
+
+@import "../libs/bootstrap-5.2.2/scss/bootstrap";
+.btn-net {
+  background-color: #e3e7ea !important;
+  border: #e3e7ea !important;
+  color: #282850 !important;
+}
+.btn-net:hover {
+  background-color: #a2a2a2 !important;
+  border: #a2a2a2 !important;
+  color: #282850 !important;
+}
+.btn-net:focus {
+  background-color: #282850 !important;
+  border: #282850 !important;
+  color: #fff !important;
+}
+.btn-transparent {
+  background-color: transparent !important;
+  border: none !important;
+  color: #282850 !important;
+  text-transform: uppercase !important;
+  font-size: small !important;
+}
+.btn-transparent:hover {
+  background-color: transparent !important;
+  border: none !important;
+  color: #73a1b4 !important;
+  text-transform: uppercase !important;
+  font-size: small !important;
+}
+.btn-transparent-bold {
+  background-color: transparent !important;
+  border: none !important;
+  color: #282850 !important;
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+  font-size: small !important;
+}
+.btn-transparent-bold:hover {
+  background-color: transparent !important;
+  border: none !important;
+  color: #73a1b4 !important;
+  text-transform: uppercase !important;
+  font-size: small !important;
+}
+//Eliminar borde reslatado en elementos
+input:focus,
+select:focus,
+.form-control:focus,
+.form-select:focus,
+textarea:focus,
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+// PERSONALIZAR TABS
+#mainTab li button {
+  background-color: #f1f3f4 !important;
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+}
+#mainTab li button.active {
+  border-color: transparent !important;
+  background-color: white !important;
+}
+#mainTab li button.active:hover {
+  color: #73a1b4 !important;
+}
+#secondTabs li a {
+  background-color: #e3e7ea !important;
+}
+#secondTabs li a:hover {
+  background-color: #a2a2a2 !important;
+  color: #282850 !important;
+}
+#secondTabs li {
+  margin-right: 0.8rem !important;
+}
+#secondTabs li a.active {
+  border-color: transparent !important;
+  background-color: #282850 !important;
+}
+#secondTabs li a.active:hover {
+  color: #fff !important;
+  background-color: #282850 !important;
+}
+.form-select {
+  width: max-content !important;
+  border: transparent !important;
+}
+.form-select:hover {
+  background-color: #9ccadd !important;
+}
+.select-outline {
+  background-color: #fff !important;
+  border: 1px solid #282850 !important;
+}
+.select-outline:hover {
+  background-color: #73a1b4 !important;
+}
+
+select option {
+  background: #fff !important;
+  color: #282850 !important;
+}
+.btn-outline-primary:focus {
+  background-color: #282850 !important;
+  color: #fff !important;
+}
+// PERSONALIZANDO TOOLTIPS
+.warning-tooltip {
+  --bs-tooltip-bg: #fff;
+  --bs-tooltip-color: #ff4e00;
+}
+.warning-tooltip .tooltip-inner {
+  background-color: #fff !important;
+  border: 2px solid #ff4e00 !important;
+}
+.warning-tooltip.tooltip.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: #ff4e00;
+}
+
+.warning-tooltip.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: #ff4e00;
+}
+
+.warning-tooltip.tooltip.bs-tooltip-start .tooltip-arrow::before {
+  border-left-color: #ff4e00;
+}
+
+.warning-tooltip.tooltip.bs-tooltip-end .tooltip-arrow::before {
+  border-right-color: #ff4e00;
+}
+.info-tooltip {
+  --bs-tooltip-bg: #fff;
+  --bs-tooltip-color: #282850;
+  // border: 1px solid #ff4e00 !important;
+}
+.info-tooltip .tooltip-inner {
+  background-color: #fff !important;
+  border: 2px solid #282850 !important;
+}
+.info-tooltip.tooltip.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: #282850;
+}
+
+.info-tooltip.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: #282850;
+}
+
+.info-tooltip.tooltip.bs-tooltip-start .tooltip-arrow::before {
+  border-left-color: #282850;
+}
+
+.info-tooltip.tooltip.bs-tooltip-end .tooltip-arrow::before {
+  border-right-color: #282850;
+}
+.table thead tr th {
+  background-color: #73a1b4 !important;
+  color: #fff;
+  border-right: 1px solid #fff !important;
+  border-left: 1px solid #fff !important;
+}
+
+.table tbody {
+  border: none !important;
+}
+.table tbody tr td {
+  border-bottom: 1px solid #73a1b4 !important;
+}
+.pagination li.active a {
+  background-color: #73a1b4 !important;
+}
+.pagination li a:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}

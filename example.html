@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ejemplos</title>
+    <!-- CSS DATATABLE -->
+    <link
+      rel="stylesheet"
+      href="libs/DataTables/Bootstrap-5-5.1.3/css/bootstrap.min.css"
+    />
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="css/custom-bootstrap.css" />
+  </head>
+  <body>
+    <div class="container my-5">
+      <!-- CONTAINER TABS -->
+      <div class="cont-tabs p-5 bg-white">
+        <!-- headers -->
+        <h5 class="text-center mb-4">Header Principal</h5>
+        <ul class="nav nav-tabs" id="mainTab" role="tablist">
+          <!-- 1 -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="tab1"
+              data-bs-toggle="tab"
+              data-bs-target="#tab1-pane"
+              type="button"
+              role="tab"
+              aria-controls="tab1-pane"
+              aria-selected="true"
+            >
+              Tab1
+            </button>
+          </li>
+
+          <!-- 2 -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="tab2"
+              data-bs-toggle="tab"
+              data-bs-target="#tab2-pane"
+              type="button"
+              role="tab"
+              aria-controls="tab2-pane"
+              aria-selected="false"
+            >
+              Tab2
+            </button>
+          </li>
+
+          <!-- 3 -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="tab3"
+              data-bs-toggle="tab"
+              data-bs-target="#tab3-pane"
+              type="button"
+              role="tab"
+              aria-controls="tab3-pane"
+              aria-selected="false"
+            >
+              Tab3
+            </button>
+          </li>
+          <!--  -->
+        </ul>
+        <!-- End headers -->
+        <!-- Start content tabs -->
+        <div class="tab-content" id="mainTabContent">
+          <div
+            class="tab-pane fade"
+            id="tab1-pane"
+            role="tabpanel"
+            aria-labelledby="tab1"
+            tabindex="0"
+          >
+            Contenido 1...
+          </div>
+          <div
+            class="tab-pane fade"
+            id="tab2-pane"
+            role="tabpanel"
+            aria-labelledby="tab2"
+            tabindex="0"
+          >
+            Contenido 2...
+          </div>
+          <div
+            class="tab-pane fade"
+            id="tab3-pane"
+            role="tabpanel"
+            aria-labelledby="tab3"
+            tabindex="0"
+          >
+            Contenido 3...
+          </div>
+        </div>
+      </div>
+      <div class="content-tabs2 my-5 p-5 bg-white">
+        <h5 class="text-center mb-4">Header Secundario</h5>
+        <ul class="nav nav-pills" id="secondTabs">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              aria-current="page"
+              href="#"
+              id="secondTab1"
+              data-bs-toggle="tab"
+              data-bs-target="#second-tab1-pane"
+              type="button"
+              role="tab"
+              aria-controls="second-tab1-pane"
+              aria-selected="true"
+              >Link</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              aria-current="page"
+              href="#"
+              id="secondTab2"
+              data-bs-toggle="tab"
+              data-bs-target="#second-tab2-pane"
+              type="button"
+              role="tab"
+              aria-controls="second-tab2-pane"
+              aria-selected="true"
+              >Link</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              aria-current="page"
+              href="#"
+              id="secondTab3"
+              data-bs-toggle="tab"
+              data-bs-target="#second-tab3-pane"
+              type="button"
+              role="tab"
+              aria-controls="second-tab3-pane"
+              aria-selected="true"
+              >Link</a
+            >
+          </li>
+        </ul>
+        <!--  -->
+        <div class="tab-content" id="secondTabContent">
+          <!--  -->
+          <div
+            class="tab-pane fade"
+            id="second-tab1-pane"
+            role="tabpanel"
+            aria-labelledby="secondTab1"
+            tabindex="0"
+          >
+            Contenido 1...
+          </div>
+          <!--  -->
+          <div
+            class="tab-pane fade"
+            id="second-tab2-pane"
+            role="tabpanel"
+            aria-labelledby="secondTab2"
+            tabindex="0"
+          >
+            Contenido 2...
+          </div>
+          <!--  -->
+          <div
+            class="tab-pane fade"
+            id="second-tab3-pane"
+            role="tabpanel"
+            aria-labelledby="secondTab3"
+            tabindex="0"
+          >
+            Contenido 3...
+          </div>
+        </div>
+      </div>
+      <!-- End content Tabs 2-->
+      <div class="row my-5 p-5 bg-white">
+        <h5 class="text-center mb-4">Acciones en tablas</h5>
+        <!--  -->
+        <div class="col-sm-4">
+          <select class="form-select" aria-label="">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <!--  -->
+        <div class="col-sm-4">
+          <select class="form-select select-outline" aria-label="">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <!--  -->
+        <div class="col-sm-4">
+          <button class="btn btn-outline-primary">Action</button>
+        </div>
+      </div>
+      <!-- TOOLTIPS START -->
+      <div class="row my-5 p-5 bg-white">
+        <!--  -->
+        <div class="col-4">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            data-bs-custom-class="warning-tooltip"
+            data-bs-title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          >
+            Warning tooltip
+          </button>
+        </div>
+        <!--  -->
+        <div class="col-4">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            data-bs-custom-class="info-tooltip"
+            data-bs-title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          >
+            Info tooltip
+          </button>
+        </div>
+        <!--  -->
+      </div>
+      <!-- TOOTLTIPS END -->
+      <!-- DTT -->
+      <div class="row p-5 my-5 bg-white">
+        <div class="col-12">
+          <table id="example" class="table display compact" style="width: 100%">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011-04-25</td>
+                <td>$320,800</td>
+              </tr>
+              <tr>
+                <td>Garrett Winters</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>63</td>
+                <td>2011-07-25</td>
+                <td>$170,750</td>
+              </tr>
+              <tr>
+                <td>Garrett Winters</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>63</td>
+                <td>2011-07-25</td>
+                <td>$170,750</td>
+              </tr>
+              <tr>
+                <td>Garrett Winters</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>63</td>
+                <td>2011-07-25</td>
+                <td>$170,750</td>
+              </tr>
+              <tr>
+                <td>Ashton Cox</td>
+                <td>Junior Technical Author</td>
+                <td>San Francisco</td>
+                <td>66</td>
+                <td>2009-01-12</td>
+                <td>$86,000</td>
+              </tr>
+              <tr>
+                <td>Cedric Kelly</td>
+                <td>Senior Javascript Developer</td>
+                <td>Edinburgh</td>
+                <td>22</td>
+                <td>2012-03-29</td>
+                <td>$433,060</td>
+              </tr>
+              <tr>
+                <td>Airi Satou</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>33</td>
+                <td>2008-11-28</td>
+                <td>$162,700</td>
+              </tr>
+              <tr>
+                <td>Brielle Williamson</td>
+                <td>Integration Specialist</td>
+                <td>New York</td>
+                <td>61</td>
+                <td>2012-12-02</td>
+                <td>$372,000</td>
+              </tr>
+              <tr>
+                <td>Herrod Chandler</td>
+                <td>Sales Assistant</td>
+                <td>San Francisco</td>
+                <td>59</td>
+                <td>2012-08-06</td>
+                <td>$137,500</td>
+              </tr>
+              <tr>
+                <td>Rhona Davidson</td>
+                <td>Integration Specialist</td>
+                <td>Tokyo</td>
+                <td>55</td>
+                <td>2010-10-14</td>
+                <td>$327,900</td>
+              </tr>
+              <tr>
+                <td>Colleen Hurst</td>
+                <td>Javascript Developer</td>
+                <td>San Francisco</td>
+                <td>39</td>
+                <td>2009-09-15</td>
+                <td>$205,500</td>
+              </tr>
+              <tr>
+                <td>Sonya Frost</td>
+                <td>Software Engineer</td>
+                <td>Edinburgh</td>
+                <td>23</td>
+                <td>2008-12-13</td>
+                <td>$103,600</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- END DTT -->
+      <div class="row my-5">
+        <div class="col-4">
+          <a href="plantillas/sidebar.html" class="btn btn-success">Ver Menu</a>
+        </div>
+      </div>
+    </div>
+    <!-- end container -->
+    <!-- JS DATATABLE -->
+    <script src="libs/DataTables/jQuery-3.6.0/jquery-3.6.0.min.js"></script>
+    <script src="libs/DataTables/datatables.min.js"></script>
+    <script src="libs/DataTables/Bootstrap-5-5.1.3/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="libs/bootstrap-5.2.2/dist/js/bootstrap.min.js"></script>
+    <script src="libs/bootstrap-5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      /**
+       *
+       * START TABS PRINCIPAL
+       *
+       * **/
+      //Habilitar las pestañas que se pueden tabular
+      const triggerTabList = document.querySelectorAll("#mainTab button");
+      triggerTabList.forEach((triggerEl) => {
+        const tabTrigger = new bootstrap.Tab(triggerEl);
+
+        triggerEl.addEventListener("click", (event) => {
+          event.preventDefault();
+          tabTrigger.show();
+        });
+      });
+      // activar primera pestaña por nombre
+      const triggerEl = document.querySelector(
+        '#mainTab button[data-bs-target="#tab1-pane"]'
+      );
+      bootstrap.Tab.getInstance(triggerEl).show();
+      /**
+       *
+       * START TABS SECUNDARIAS
+       *
+       * **/
+      //Habilitar las pestañas que se pueden tabular
+      const triggerSecondTab = document.querySelectorAll("#secondTabs a");
+      triggerSecondTab.forEach((triggerEl) => {
+        const tabTrigger = new bootstrap.Tab(triggerEl);
+
+        triggerEl.addEventListener("click", (event) => {
+          event.preventDefault();
+          tabTrigger.show();
+        });
+      });
+      // activar primera pestaña por nombre
+      const triggerEl2 = document.querySelector(
+        '#secondTabs a[data-bs-target="#second-tab1-pane"]'
+      );
+      bootstrap.Tab.getInstance(triggerEl2).show();
+      //
+      /**
+       *
+       * Inicializar TOOLTIPS
+       */
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+      // INICIALIZACION DE DATATABLES
+      $(document).ready(function () {
+        $("#example").DataTable({
+          dom:
+            "<'row'<'col-sm-12 col-md-6'l><'col-sm-12 col-md-6 d-flex justify-content-end'f>>" +
+            "<'row'<'col-sm-12'tr>>" +
+            "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7 d-flex justify-content-end'p>>",
+        });
+      });
+    </script>
+  </body>
+</html>
